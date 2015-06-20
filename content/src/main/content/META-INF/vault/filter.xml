@@ -1,4 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <workspaceFilter version="1.0">
-    <filter root="/apps/aem_sectionoutlines"/>
+    <filter root="/apps/wcm/core/components/outlines"/>
+    <filter root="/apps/wcm/core/content/editor/jcr:content/content/items/content/header/items/headerbar/items/outlines"/>
+    <filter root="/etc/designs/primeforce/clientlib_outlines"/>
 </workspaceFilter>

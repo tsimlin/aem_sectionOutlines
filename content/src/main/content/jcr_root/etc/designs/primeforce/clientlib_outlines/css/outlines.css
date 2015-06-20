@@ -1,0 +1,70 @@
+span.toggleBorders {
+	display: inline-block;
+	background: green;
+	padding: 5px 12px;
+	color: white;
+	position: fixed;
+	top: 0px;
+	right: 50px;
+	font-weight: bold;
+	outline: 1px solid white;
+	outline-offset: -2px;
+}
+span.toggleBorders.active { 
+  background-color: orange;
+}
+span.toggleBorders:hover { 
+  cursor: pointer
+}
+
+.toggleBorders {
+	display: inline-block;
+	cursor: pointer;
+	background: green;
+	padding: 2px 5px;
+	color: white;
+	position: fixed;
+	top: 20px;
+	right: 50px;
+}
+
+.aem-AuthorLayer-Edit.showBorders div.section { 
+	outline: 2px solid blue;
+	outline-offset: 2px; 
+	box-sizing:outline-box;
+	  -moz-box-sizing:outline-box;
+	  -webkit-box-sizing:outline-box;
+	margin: 0 5px 20px;
+	padding-bottom: 2px;
+}
+
+span.compTitle {
+	display: none;
+	margin-bottom: 5px;
+	background: blue;
+	color: white;
+	text-align: center;	
+}
+
+.aem-AuthorLayer-Edit.showBorders div.section div.section { outline-color: red; }
+.aem-AuthorLayer-Edit.showBorders div.section div.section span.compTitle { background: red }
+
+.aem-AuthorLayer-Edit.showBorders div.section div.section div.section { outline-color: green; }
+.aem-AuthorLayer-Edit.showBorders div.section div.section div.section span.compTitle { background: green }
+
+.aem-AuthorLayer-Edit.showBorders div.section div.section div.section div.section { outline-color: lightblue; }
+.aem-AuthorLayer-Edit.showBorders div.section div.section div.section div.section span.compTitle { background: lightblue }
+
+.aem-AuthorLayer-Edit.showBorders div.section div.section div.section div.section div.section { outline-color: pink; }
+.aem-AuthorLayer-Edit.showBorders div.section div.section div.section div.section div.section span.compTitle { background: pink }
+
+.aem-AuthorLayer-Edit.showBorders div.section div.section div.section div.section div.section div.section { outline-color: lightgreen; }
+.aem-AuthorLayer-Edit.showBorders div.section div.section div.section div.section div.section div.section span.compTitle { background: lightgreen }
+
+.aem-AuthorLayer-Edit.showBorders span.compTitle {
+	display: block;
+}
+
+.aem-AuthorLayer-Edit.showBorders .new.section {
+	outline: none;
+}
