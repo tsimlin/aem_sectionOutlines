@@ -6,22 +6,38 @@ var sectionNames = {
 		"downloaditem":"Downloaditem"
 }
 
+$(document).ready(initTitleSpans);
+
 //create title spans
-$.each($("div.section"), function () {
-	var classNames = $(this).attr("class").split(" ");
-	var foundItem = false;
+function initTitleSpans () {
+	$.each($("div.section"), function () {
+		processDivForTitleSpan(this);
+	});
 	
-	if(!$(this).hasClass("new")){
-		for (item in classNames) {
-			if(sectionNames.hasOwnProperty(classNames[item])) {
-				$(this).prepend("<span class='compTitle'>" + sectionNames[classNames[item]] + "</span>");
-				foundItem = true;
-				break;
-			} 
+	$( document ).on( "DOMNodeInserted", function( e ) {
+		if($(e.target).hasClass("section")) { 
+			processDivForTitleSpan($(e.target));
 		}
-		
-		if(foundItem==false) {
-			$(this).prepend("<span class='compTitle'>" + classNames.toString() + "</span>");
-		}
+	});
+}
+
+function processDivForTitleSpan(obj) {
+	var classNames = $(obj).attr("class").split(" ");
+	
+	if(!$(obj).hasClass("new") && $(obj).find(".compTitle").length == 0) {
+		addTitleSpan(obj, getTitleByClasses(classNames));
 	}
-});
+}
+
+function getTitleByClasses(classNames) {
+	for (item in classNames) {
+		if(sectionNames.hasOwnProperty(classNames[item])) {
+			return sectionNames[classNames[item]];
+		} 
+	}
+	return classNames;
+}
+
+function addTitleSpan(obj,txt) {
+	$(obj).prepend("<span class='compTitle'>" + txt + "</span>");
+}
