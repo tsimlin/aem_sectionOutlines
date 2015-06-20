@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:primaryType="sling:OrderedFolder">
+    <outlines
+	    jcr:primaryType="nt:unstructured"
+	    sling:resourceType="granite/ui/components/foundation/button"
+	    align="left"
+	    class="cq-outlines-action editor-outlines-item editor-GlobalBar-item js-editor-LayerSwitcherTrigger "
+	    minimal="{Boolean}true"
+	    text="Toggle Outlines"
+        title="Toggle Outlines"/>
+</jcr:root>

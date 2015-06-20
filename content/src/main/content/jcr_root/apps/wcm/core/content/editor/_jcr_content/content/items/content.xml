@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:vlt="http://www.day.com/jcr/vault/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:mixinTypes="[vlt:FullCoverage]"
+    jcr:primaryType="sling:OrderedFolder"
+    sling:resourceType="cq/gui/components/authoring/editorpanel"
+    default="{Boolean}true"
+    id="Content">
+    <header
+        jcr:primaryType="nt:unstructured"
+        class="editor-GlobalBar js-editor-PanelHeader">
+        <items jcr:primaryType="nt:unstructured">
+            <headerbar
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="cq/gui/components/authoring/headerbar"
+                class="header-main">
+                <items jcr:primaryType="nt:unstructured">
+                    <outlines
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/foundation/button"
+                        align="left"
+                        class="cq-outlines-action editor-GlobalBar-item coral-MinimalButton"
+                        minimal="\{Boolean}true"
+                        text="Toggle Outlines"
+                        title="Toggle Outlines"/>
+                </items>
+            </headerbar>
+        </items>
+    </header>
+</jcr:root>

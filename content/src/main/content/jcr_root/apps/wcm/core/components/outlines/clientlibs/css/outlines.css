@@ -1,0 +1,7 @@
+.coral-Panel-header .cq-outlines-action {
+	background: none !important;
+}
+.cq-outlines-action span {
+    border: 1px dotted rgb(160, 160, 160);
+	padding: 2px 5px;
+}
